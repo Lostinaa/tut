@@ -1,0 +1,139 @@
+*{@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    margin:0;
+    box-sizing:border-box;
+    padding: 0;
+} body{
+    font-family: 'Roboto', sans-serif;
+    background:#181818;
+    color:white;
+    font-weight: 300;
+}
+.logo img{
+    width: 200px;
+     background: transparent;
+    color:white;
+    
+    
+ } 
+   
+ form{
+    width:50%;
+    padding-bottom:3rem;
+   display:flex;
+   flex-direction: column;
+    
+} input{
+
+    width: 100%;
+    background: #181818;
+    border:1px solid rgb(41, 40, 40);
+    border-radius:2px;
+    margin-bottom: 1.3rem;
+    line-height:1.3rem;
+    padding: 0.5rem 1rem;
+    color:#ccc;
+   
+   
+} td,
+th {
+    border: 1px solid rgb(47, 47, 47);
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+    width:100px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(77, 45, 45, 0.685);
+}
+
+tr:nth-child(odd){
+    background-color: rgba(67, 53, 53, 0.685);
+}
+
+th[scope="col"] {
+    background-color: rgba(157, 0, 0, 0.732);
+    color: #fff;
+    font-size: 40px;
+}
+
+th[scope="row"] {
+    font-size: 1.2rem;
+    background-color: rgba(84, 17, 17, 0.685);
+    width:500px;
+    color:rgba(226, 222, 222, 0.781)
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+table {
+   margin:10px 100px;
+   border:1px solid black;
+    border-radius:30px;
+    height:5vh;
+    width: 75%;
+    border-collapse: collapse;
+    border: 2px solid rgb(63, 60, 60);
+    letter-spacing: 1px;
+
+    font-size: 0.8rem;
+}
+ .main{
+    display: flex;
+    flex-direction: column;
+    
+    
+    flex:1;
+    align-items: center;
+    height:100vh;
+    justify-content: center;
+    
+ } label{
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 0.1em;
+ } .txt a { 
+    color:white;
+ text-align: center;
+margin-bottom: 0.9rem;
+display: block;
+font-size: 1rem;
+}   .foot{
+    color:#ccc;
+    font-size:0.8rem;
+    text-align:center;
+    max-width: 100%;
+    padding-top: 5rem;
+ 
+} .foot a{
+ color:#df4b02;
+
+} .one{
+    text-align: none;
+    border:none;
+    padding:10px 30px;
+    border-radius: 30px;
+    background: rgba(220, 20, 60, 0.534);
+    color: rgba(218, 211, 211, 0.736);
+} .one a{
+    text-transform: capitalize;
+    color: rgba(218, 211, 211, 0.952);
+    font-size: 1rem;
+    text-decoration: none;
+} .two{
+    border:none;
+    padding:10px 30px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.534);
+    color: rgba(218, 211, 211, 0.736);
+} .two a{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: rgba(218, 211, 211, 0.952);
+} 

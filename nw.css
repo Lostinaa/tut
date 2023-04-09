@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+    padding: 0;
+} body{
+    background:rgba(0, 0, 0, 0.378);
+    color:rgb(255, 250, 249);
+    padding:100px;
+}
+ form{
+    font-size:24px;
+    display:flex;
+    height:100%;
+    flex-direction: column;
+    align-items:center;
+    margin:100px;
+} input{
+    justify-content:space-around;
+    background:transparent;
+    border-radius:10px;
+    padding:1rem;
+    margin:1rem;
+    border-radius:20px;
+    color:rgb(157, 157, 157);
+} .new{
+    background:rgb(56, 43, 43);
+}
+$conn  = new mysqli('localhost','root','','student');
+if($conn->connect_error){
+ die("connection failed:" . $conn->connect_error); }
+ if(isset($_GET['deleted'])){  
+$id=$_GET['deleted'];
+$sql="DELETE FROM `student` WHERE ID=$id";
+$result=mysqli_query($conn,$sql);
+if($result){
+ echo "deletedd";
+}else{
+ die('connection failed:'.$conn->connect_error);
+}
+ }
+$conn->close();
+?>
+$email=$_POST['email'];
+$pass=$_POST['password'];
+
+
+$conn  = new mysqli('localhost','root','','student');
+if($conn->connect_error){
+ die('connection failed:' .$conn->connect_error);
+}else{
+ $stmt = $conn->prepare("insert into student(email,password)
+ values(?,?)");
+ $stmt->bind_param("si", $email, $pass );
+ $stmt->execute();
+ echo "registers";
+
+}
